@@ -1,0 +1,166 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 0.8em;
+    background-color: rgb(232, 236, 239);
+}
+
+h2{
+    padding:10px;
+    margin: 2px 0px 10px 0px;
+
+    border-radius: 5px; 
+    background-color: #d9e5ec; 
+    border: 1px solid #b0b5bf;
+    box-shadow: 0 2px 3px rgba(46, 47, 50, 0.2); 
+}
+
+.boxMain {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px; 
+    display:flex;
+    gap:10px;
+
+    border-radius: 10px; 
+    background-color: #f9f9f9; 
+    border: 1px solid #CCC;
+    box-shadow: 0 2px 3px rgba(46, 47, 50, 0.2); 
+}
+
+.boxMain label {
+
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    
+    display: inline-flex;
+    align-items: center;
+}
+
+.boxMain input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    
+    border-radius: 5px;
+    border: 1px solid rgb(153, 178, 200);
+    outline: 1px solid #498da4;
+}
+
+.boxMain button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.boxMain button:hover {
+    background-color: #0056b3;
+}
+
+/* ************************************* */
+
+/* clase row */
+.row {
+    gap: 10px;
+    display: flex; 
+    flex-wrap: wrap; 
+}
+.row > label{
+    font-weight: bold;
+}
+
+/* clase col */
+.col {
+    flex: 1;  
+    min-width: 130px; 
+}
+
+.dineroCliente {
+    padding:10px;
+
+    border-radius: 10px;
+    border: 1px solid rgb(128, 173, 72);
+    background-color: rgb(242, 249, 240);
+    box-shadow: 0 2px 3px rgba(46, 47, 50, 0.2); 
+}
+.dineroCliente #totalCliente {
+    margin-left: -5px;
+}
+
+.dineroCliente .col {
+    max-width: 50%; 
+    padding: 10px;
+    margin: 5px 0 5px 0px;
+
+    border-radius: 10px;
+    border: 1px solid rgb(166, 223, 149);
+    background-color: rgb(254, 255, 255);
+}
+
+.dineroCaja {
+    padding:10px;
+
+    border-radius: 10px;
+    border: 1px solid rgb(173, 164, 72);
+    background-color: rgb(249, 247, 240);
+    box-shadow: 0 2px 3px rgba(46, 47, 50, 0.2); 
+}
+.dineroCaja .col {
+    max-width: 50%; 
+    padding: 10px;
+    margin:5px 0 5px 0px;
+
+    border-radius: 10px;
+    border: 1px solid rgb(223, 207, 149);
+    background-color: rgb(254, 255, 255);
+}
+
+.titulo {
+    font-size:15px;
+    font-weight: bold;
+    color: rgb(29, 61, 203);
+}
+.linea {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.linea label {
+    width:50px;
+    padding:3px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color:rgb(227, 233, 239);
+}
+.linea span {
+    margin-left:5px;
+}
+.linea input {
+    width: 40px;
+}
+
+/* ************************************* */
+
+.boxInfo {
+    gap:10px;
+    width: 100%;
+    height:auto;
+    max-height: 200px;
+    overflow: auto;
+
+    display:flex;
+    padding: 10px;
+    margin-top: 10px; 
+
+    border-radius: 10px; 
+    background-color: #f9f9f9; 
+    border: 1px solid #CCC;
+    box-shadow: 0 2px 3px rgba(46, 47, 50, 0.2); 
+}

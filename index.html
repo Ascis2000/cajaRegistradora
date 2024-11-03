@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caja Registradora</title>
+	
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/modal.css">
+</head>
+
+<body>
+    <h2>Caja Registradora</h2>
+
+	<div class="boxMain">
+		<label for="precio">Precio del artículo (€):</label>
+		<input type="text" id="precio" value="25.50" maxlength="5" size="6">
+		<button id="btn_comprar">Comprar</button>
+	</div>
+
+	<div class="row">
+		<div class="col">
+			<div class="dineroCliente">
+				<div class="row">
+					<label>DINERO DEL CLIENTE:</label>
+					<span id="totalCliente"></span>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="titulo">Monedas</div>
+						<div class="linea">
+							<label for="cliente_2">2 €:</label>
+							<input type="number" id="cliente_2" value="0" min="0" width="80">
+							<span class="totales" id="cliente_2_total"></span>
+						</div>
+						<div class="linea">
+							<label for="cliente_1">1 €:</label>
+							<input type="number" id="cliente_1" value="0" min="0">
+							<span class="totales" id="cliente_1_total"></span>
+						</div>
+						<div class="linea">
+							<label for="cliente_0.5">0.50 €:</label>
+							<input type="number" id="cliente_0.5" value="0" min="0">
+							<span class="totales" id="cliente_0.5_total"></span>
+						</div>
+						<div class="linea">
+							<label for="cliente_0.2">0.20 €:</label>
+							<input type="number" id="cliente_0.2" value="0" min="0">
+							<span class="totales" id="cliente_0.2_total"></span>
+						</div>
+						<div class="linea">
+							<label for="cliente_0.1">0.10 €:</label>
+							<input type="number" id="cliente_0.1" value="0" min="0">
+							<span class="totales" id="cliente_0.1_total"></span>
+						</div>
+						<div class="linea">
+							<label for="cliente_0.05">0.05 €:</label>
+							<input type="number" id="cliente_0.05" value="0" min="0">
+							<span class="totales" id="cliente_0.05_total"></span>
+						</div>
+						<div class="linea">
+							<label for="cliente_0.02">0.02 €:</label>
+							<input type="number" id="cliente_0.02" value="0" min="0">
+							<span class="totales" id="cliente_0.02_total"></span>
+						</div>
+						<div class="linea">
+							<label for="cliente_0.01">0.01 €:</label>
+							<input type="number" id="cliente_0.01" value="0" min="0">
+							<span class="totales" id="cliente_0.01_total"></span>
+						</div>
+					</div>
+					
+					<div class="col">
+						<div class="titulo">Billetes</div>
+						<div class="linea">
+							<label for="cliente_500">500 €:</label>
+							<input type="number" id="cliente_500" value="0" min="0">
+							<span class="totales" id="cliente_500_total"></span>
+						</div>
+						<div class="linea">
+							<label for="cliente_200">200 €:</label>
+							<input type="number" id="cliente_200" value="0" min="0">
+							<span class="totales" id="cliente_200_total"></span>
+						</div>
+						<div class="linea">
+							<label for="cliente_100">100 €:</label>
+							<input type="number" id="cliente_100" value="0" min="0">
+							<span class="totales" id="cliente_100_total"></span>
+						</div>
+						<div class="linea">
+							<label for="cliente_50">50 €:</label>
+							<input type="number" id="cliente_50" value="0" min="0">
+							<span class="totales" id="cliente_50_total"></span>
+						</div>
+						<div class="linea">
+							<label for="cliente_20">20 €:</label>
+							<input type="number" id="cliente_20" value="0" min="0">
+							<span class="totales" id="cliente_20_total"></span>
+						</div>
+						<div class="linea">
+							<label for="cliente_10">10 €:</label>
+							<input type="number" id="cliente_10" value="0" min="0">
+							<span class="totales" id="cliente_10_total"></span>
+						</div>
+						<div class="linea">
+							<label for="cliente_5">5 €:</label>
+							<input type="number" id="cliente_5" value="0" min="0">
+							<span class="totales" id="cliente_5_total"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col">
+			<div class="dineroCaja">
+				<div class="row">
+					<label>DINERO EN CAJA</label>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="titulo">Monedas</div>
+						<div class="linea">
+							<label for="caja_2">2 €:</label>
+							<input type="text" id="caja_2" value="0" disabled>
+						</div>
+						<div class="linea">
+							<label for="caja_1">1 €:</label>
+							<input type="text" id="caja_1" value="0" disabled>
+						</div>
+						<div class="linea">
+							<label for="caja_0.5">0.50 €:</label>
+							<input type="text" id="caja_0.5" value="0" disabled>
+						</div>
+						<div class="linea">
+							<label for="caja_0.2">0.20 €:</label>
+							<input type="text" id="caja_0.2" value="0" disabled>
+						</div>
+						<div class="linea">
+							<label for="caja_0.1">0.10 €:</label>
+							<input type="text" id="caja_0.1" value="0" disabled>
+						</div>
+						<div class="linea">
+							<label for="caja_0.05">0.05 €:</label>
+							<input type="text" id="caja_0.05" value="0" disabled>
+						</div>
+						<div class="linea">
+							<label for="caja_0.02">0.02 €:</label>
+							<input type="text" id="caja_0.02" value="0" disabled>
+						</div>
+						<div class="linea">
+							<label for="caja_0.01">0.01 €:</label>
+							<input type="text" id="caja_0.01" value="0" disabled>
+						</div>
+					</div>
+					
+					<div class="col">
+						<div class="titulo">Billetes</div>
+						<div class="linea">
+							<label for="caja_500">500 €:</label>
+							<input type="text" id="caja_500" value="0" disabled>
+						</div>
+						<div class="linea">
+							<label for="caja_200">200 €:</label>
+							<input type="text" id="caja_200" value="0" disabled>
+						</div>
+						<div class="linea">
+							<label for="caja_100">100 €:</label>
+							<input type="text" id="caja_100" value="0" disabled>
+						</div>
+						<div class="linea">
+							<label for="caja_50">50 €:</label>
+							<input type="text" id="caja_50" value="0" disabled>
+						</div>
+						<div class="linea">
+							<label for="caja_20">20 €:</label>
+							<input type="text" id="caja_20" value="0" disabled>
+						</div>
+						<div class="linea">
+							<label for="caja_10">10 €:</label>
+							<input type="text" id="caja_10" value="0" disabled>
+						</div>
+						<div class="linea">
+							<label for="caja_5">5 €:</label>
+							<input type="text" id="caja_5" value="0" disabled>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="boxInfo">
+		<label id="infoMensaje">No se ha efectuado ninguna compra</label>
+	</div>
+
+	<div id="boxModal" class="modal_negro">
+        <div class="modal">
+			<img src="./assets/img/ico_info.png" width="30">
+            <p id="txtModal">Mensaje de error</p>
+            <button id="closeModal">Cerrar</button>
+        </div>
+    </div>
+
+	<script src="js/utils.js"></script>
+	<script src="js/modal.js"></script>
+    <script src="js/cajaRegistradora.js"></script>
+</body>
+</html>
