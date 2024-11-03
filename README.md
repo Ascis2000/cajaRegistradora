@@ -1,74 +1,30 @@
 # cajaRegistradora
 
-### JS, ES6, Node.js, Frontend, Backend, Express, React, MERN, testing, DevOps
+### Algoritmo de caja registradora
 
-## EJERCICIO: Biblioteca :octocat: :scroll: :bangbang: :books: :book:
+Disponemos en la caja del siguiente dinero distribuido de la siguiente manera: 234,27 € (información que se debe cargar en un array)
 
-Utilizando la [API del NYTimes](https://developer.nytimes.com/apis) vamos a crear una biblioteca de los libros más vendidos por temática
-
-![NYT_logo](../../assets/js_avanzado/biblioteca/nyt.svg)
-
-Ofreceremos al cliente un dashboard con la listas disponibles en *[Books API](https://developer.nytimes.com/docs/books-product/1/overview)*.
+- Billetes de 500€: 0
+- Billetes de 200€: 0
+- Billetes de 100€: 0
+- Billetes de 50€: 1 
+- Billetes de 20€: 4
+- Billetes de 10€: 8
+- Billetes de 5€: 2
+- Monedas de 2€: 5
+- Monedas de 1€: 4
+- Monedas de 0.50€: 0
+- Monedas de 0.20€: 0
+- Monedas de 0.10€: 1
+- Monedas de 0.05€: 2
+- Monedas de 0.02€: 3
+- Monedas de 0.01€: 1
 
 
 **Requisitos para este proyecto**
-- Manipulación dinámica del **DOM**
-- Manejo de **ES6**
-- **Asincronía**
-- Sin frameworks ni librerias externas en la medida de lo posible
-- Gestión del proyecto en **Github** desde el principio. Uso de ramas.
-- Código limpio, **buenas prácticas**
-- Diseño responsive, mobile first, semántica HTML5
+- El programa obtiene un precio de artículo y un importe pagado desglosado (se deben conocer las cantidades entregadas de todos los billetes y monedas) y responderá si no hay cambio, si está justo o si se devuelve cambio, de nuevo con el desglose que debe ser lo más óptimo (es decir, si puedo devolver un billete de 20, no devuelvo 2 de 10, por ejemplo).
 
-**Opcional**
-- Otras APIs, Local Storage, Firebase, PWA...
-- En general, cualquier extra será bien recibido para que investiguéis por vuestra cuenta, siempre y cuando tenga sentido
+- Debemos mostrar al final el desglose del cambio y el nuevo estado de la caja.
 
-**Especificaciones(Fase I):**
-- Incluir una animación mientras esperamos la carga del contenido.
-- Al cargar la web deben de aparecer todas las listas con los siguientes datos:
-	- Nombre completo de la lista
-	- Fecha del libro más antiguo en la lista
-	- Fecha del último libro incorporado
-	- Frecuencia de actualización
-	- Link para poder cargar la lista
-- Al pinchar en el link de una lista especifica, el DOM debe cambiar e incluir los siguientes datos:
-- Un botón para *volver atras* y recargar la disposición anterior
-- Los libros deben estar organizados según el orden de la lista oficial
-- Incluir 
-    - Carátula del libro
-    - Cantidad de semanas que lleva en la lista
-    - Descripción
-    - Titulo y la posición que ocupa en la lista ( #1 titulo.... #2 titulo....)
-    - Link para poder comprar el libro en amazon (debe abrirse en otra pestaña)
-
-**Especificaciones (Fase II - Firebase):**
-
-- Autenticación con Firebase auth: Los usuarios que se autentiquen podrán guardar sus favoritos
-- Añadir un botón de favoritos en cada libro
-- Los favoritos se guardarán en en Firebase Firestore
-- Necesitarás una vista extra en el front para que cada usuario pueda ver sus favoritos
-
-**Extra (Fase III - Firebase cloud Storage):**
-
-- Los usuarios que se registren podrán subir su foto al sistema
-- La foto se guardará en Firebase Cloud Storage y la URL de la foto en el documento del usuario en Firebase Firestore
-
-
-**Ejemplos de vistas:**
-- Dashboard:
-
-![NYTimes.png](../../assets/js_avanzado/biblioteca/best_sellers1.png)
-
-- Dentro de una lista:
-
-![NYTimes.png](../../assets/js_avanzado/biblioteca/best_sellers2.png)
-
-**Trucos:**
-- Mira en detalle la [documentación oficial](http://developer.nytimes.com/docs)
-- Usa el *[Books API](https://developer.nytimes.com/docs/books-product/1/overview)*
-
-
-### A por ello!!!
 
 ![Logo](../../assets/js_avanzado/biblioteca/catbooks_meme.jpg)
