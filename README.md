@@ -25,6 +25,3 @@ Disponemos en la caja del siguiente dinero distribuido de la siguiente manera: 2
 - El programa obtiene un precio de artículo y un importe pagado desglosado (se deben conocer las cantidades entregadas de todos los billetes y monedas) y responderá si no hay cambio, si está justo o si se devuelve cambio, de nuevo con el desglose que debe ser lo más óptimo (es decir, si puedo devolver un billete de 20, no devuelvo 2 de 10, por ejemplo).
 
 - Debemos mostrar al final el desglose del cambio y el nuevo estado de la caja.
-
-
-![Logo](../../assets/js_avanzado/biblioteca/catbooks_meme.jpg)
